@@ -1,5 +1,4 @@
 # nthcompiler
-A compiler for nth programs
 
 This project is a mini compiler for assembly code files with the .nth extension. The compiler is implemented in C and aims to provide a seamless compilation process for basic arithmetic operations.
 
