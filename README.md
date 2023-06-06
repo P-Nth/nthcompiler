@@ -27,6 +27,43 @@ This project is a mini compiler for assembly code files with the .nth extension.
 
 5. Execute the output file on the target machine to perform the desired arithmetic operations.
 
+## Usage 1
+
+1. Write your assembly code in a file with the .nth extension.
+
+2. Compile the compiler using the provided makefile or by running the necessary compilation commands.
+
+3. To compile the file and generate the output in one step, run the following command:
+
+Replace `"filename.nth"` with the name of your assembly code file.
+
+4. Alternatively, you can run each step of the compiler construction process individually:
+- Lexer: Tokenize the assembly code file.
+  ```
+  ./lexer "filename.nth"
+  ```
+
+- Parser: Parse the tokenized assembly code file.
+  ```
+  ./parser "filename.nth"
+  ```
+
+- Semantic Analysis: Perform semantic analysis on the parsed assembly code file.
+  ```
+  ./semantics "filename.nth"
+  ```
+
+- Code Generation: Generate target code from the semantically analyzed assembly code file.
+  ```
+  ./codegen "filename.nth"
+  ```
+
+Running each step individually can be helpful for understanding the inner workings of the compiler and debugging specific stages.
+
+5. The compiler will produce an output file with the compiled instructions or display any encountered errors during the compilation process.
+
+6. Execute the output file on the target machine to perform the desired arithmetic operations.
+
 ## Contributing
 
 Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue.
